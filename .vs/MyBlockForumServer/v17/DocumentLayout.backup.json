@@ -1,0 +1,415 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anton\\source\\repos\\MyForumServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\extensions\\apiextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\extensions\\apiextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\auth\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\auth\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\auth\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\auth\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\controllers\\threadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\controllers\\threadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\myblockforumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\myblockforumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\auth\\loginrequestdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\auth\\loginrequestdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\tools\\hash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\tools\\hash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\userthread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\userthread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\thread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\thread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\entities\\threadtheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\entities\\threadtheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\tools\\requestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\tools\\requestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|c:\\users\\anton\\source\\repos\\myforumserver\\myforumserver\\database\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8455E7E-C779-4FB1-83D5-C77E11FF2106}|MyForumServer\\MyBlockForumServer.csproj|solutionrelative:myforumserver\\database\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JwtOptions.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Auth\\JwtOptions.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Auth\\JwtOptions.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Auth\\JwtOptions.cs",
+              "RelativeToolTip": "MyForumServer\\Auth\\JwtOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T09:27:03.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Services\\IUserService.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T09:10:18.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Extensions\\ApiExtensions.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Extensions\\ApiExtensions.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Extensions\\ApiExtensions.cs",
+              "RelativeToolTip": "MyForumServer\\Extensions\\ApiExtensions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T09:08:59.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequestDetails.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Auth\\LoginRequestDetails.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Auth\\LoginRequestDetails.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Auth\\LoginRequestDetails.cs",
+              "RelativeToolTip": "MyForumServer\\Auth\\LoginRequestDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:53:38.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MyBlockForumDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\MyBlockForumDbContext.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\MyBlockForumDbContext.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\MyBlockForumDbContext.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\MyBlockForumDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIA5wCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:48:51.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\appsettings.json",
+              "RelativeDocumentMoniker": "MyForumServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\appsettings.json",
+              "RelativeToolTip": "MyForumServer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T08:33:58.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Program.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Program.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Program.cs*",
+              "RelativeToolTip": "MyForumServer\\Program.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:18:12.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MyForumServer\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\appsettings.Development.json",
+              "RelativeToolTip": "MyForumServer\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T09:53:21.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Auth\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Auth\\JwtProvider.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Auth\\JwtProvider.cs",
+              "RelativeToolTip": "MyForumServer\\Auth\\JwtProvider.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:31:44.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Hash.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Tools\\Hash.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Tools\\Hash.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Tools\\Hash.cs",
+              "RelativeToolTip": "MyForumServer\\Tools\\Hash.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T16:49:02.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:32:04.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserThread.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\UserThread.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\UserThread.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\UserThread.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\UserThread.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:25:37.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ThreadTheme.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\ThreadTheme.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\ThreadTheme.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\ThreadTheme.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\ThreadTheme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:25:21.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Status.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\Status.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Status.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:25:04.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Thread.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Thread.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\Thread.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Thread.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\Thread.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:24:26.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Message.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\Message.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Message.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:24:25.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\Role.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:24:22.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Entities\\User.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Entities\\User.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:24:18.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Tools\\RequestValidator.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Tools\\RequestValidator.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Tools\\RequestValidator.cs",
+              "RelativeToolTip": "MyForumServer\\Tools\\RequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T18:23:21.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Services\\MessageService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Services\\MessageService.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Services\\MessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T17:48:36.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThreadsController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Controllers\\ThreadsController.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Controllers\\ThreadsController.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Controllers\\ThreadsController.cs",
+              "RelativeToolTip": "MyForumServer\\Controllers\\ThreadsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T17:40:35.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MessagesController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Controllers\\MessagesController.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Controllers\\MessagesController.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Controllers\\MessagesController.cs",
+              "RelativeToolTip": "MyForumServer\\Controllers\\MessagesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T17:40:17.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MyForumServer\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T17:32:47.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MyForumServer\\DataBase\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\DataBase\\Services\\UserService.cs",
+              "RelativeToolTip": "MyForumServer\\DataBase\\Services\\UserService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAtwGAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T17:09:49.495Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
