@@ -47,6 +47,13 @@ namespace MyBlockForumServer
                 app.UseSwaggerUI();
             }
 
+            app.UseCors(l =>
+            l.WithOrigins("http://localhost:5173")
+            .AllowCredentials()
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            );
+
             app.UseHttpsRedirection();
 
             app.UseAuthentication();

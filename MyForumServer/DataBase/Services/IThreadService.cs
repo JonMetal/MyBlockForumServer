@@ -4,7 +4,7 @@ namespace MyBlockForumServer.DataBase.Services
 {
     public interface IThreadService
     {
-        void CreateThread(Entities.Thread thread);
+        Entities.Thread CreateThread(Entities.Thread thread);
         void DeleteThread(int threadId);
         IEnumerable<Entities.Thread> GetAllThreads();
         IEnumerable<ThreadTheme> GetAllThreadThemes();

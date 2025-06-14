@@ -26,7 +26,7 @@ namespace MyBlockForumServer.DataBase.Repositories
 
         public override IEnumerable<UserThread> GetList()
         {
-            return _db.UserThreads;
+            return _db.UserThreads.Include(l => l.Thread).Include(l => l.User);
         }
 
         public override void Update(UserThread entity)

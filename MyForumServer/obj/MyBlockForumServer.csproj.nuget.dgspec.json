@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\MyBlockForumServer.csproj": {}
+    "C:\\Onyx\\MyBlockForum\\MyBlockForumServer\\MyForumServer\\MyBlockForumServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\MyBlockForumServer.csproj": {
+    "C:\\Onyx\\MyBlockForum\\MyBlockForumServer\\MyForumServer\\MyBlockForumServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\MyBlockForumServer.csproj",
+        "projectUniqueName": "C:\\Onyx\\MyBlockForum\\MyBlockForumServer\\MyForumServer\\MyBlockForumServer.csproj",
         "projectName": "MyBlockForumServer",
-        "projectPath": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\MyBlockForumServer.csproj",
+        "projectPath": "C:\\Onyx\\MyBlockForum\\MyBlockForumServer\\MyForumServer\\MyBlockForumServer.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\obj\\",
+        "outputPath": "C:\\Onyx\\MyBlockForum\\MyBlockForumServer\\MyForumServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -21,7 +21,7 @@ namespace MyBlockForumServer.DataBase.Repositories
 
         public override User? Get(int id)
         {
-            return _db.Users.Include(l => l.Status).FirstOrDefault(l => l.Id == id);
+            return _db.Users.Include(l => l.Status).Include(l => l.FromUsers).FirstOrDefault(l => l.Id == id);
         }
 
         public override IEnumerable<User> GetList()

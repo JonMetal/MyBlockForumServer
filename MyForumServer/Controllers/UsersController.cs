@@ -21,7 +21,7 @@ namespace MyBlockForumServer.Controllers
             _userService = userService;
         }
 
-        [HttpGet("Users/{id}")]
+        [HttpGet("{id}")]
         public ActionResult<User> GetUser(int id)
         {
             if (!RequestValidator.IdValidate(id))
@@ -31,23 +31,44 @@ namespace MyBlockForumServer.Controllers
             return Ok(_userService.GetUser(id));
         }
 
-        [HttpPost("Users/Login")]
+        [HttpPost("Login")]
         [AllowAnonymous]
-        public ActionResult<string> Login([FromBody] LoginRequestDetails loginRequestDetails)
+        public ActionResult<int> Login([FromBody] LoginRequestDetails loginRequestDetails)
         {
-            var token = _userService.Login(loginRequestDetails.Login, loginRequestDetails.Password);
-
-            CookieOptions cookieOptions = new CookieOptions
+            try
             {
-                HttpOnly = false,
-                Secure = false,
-            };
-            HttpContext.Response.Cookies.Append("snezhok_cookie", token, cookieOptions);
+                var token = _userService.Login(loginRequestDetails.Login, loginRequestDetails.Password);
 
-            return Ok(token);
+                CookieOptions cookieOptions = new CookieOptions
+                {
+                    HttpOnly = false,
+                    Secure = false,
+                };
+                string id = _userService.GetUserByLogin(loginRequestDetails.Login)?.Id.ToString() ?? "";
+                HttpContext.Response.Cookies.Append("snezhok_cookie", token, cookieOptions);
+                HttpContext.Response.Cookies.Append("user_cookie", id);
+                return Ok(token);
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        public IEnumerable<User> GetUsers()
+        {
+            return _userService.GetUsers();
+        }
+
+        [HttpGet("GetIdByLogin")]
+        public ActionResult<int> GetByLogin(string Login)
+        {
+            return Ok(_userService.GetUserByLogin(Login)?.Id);
         }
 
         [HttpGet("AllStatuses")]
+        [AllowAnonymous]
         public IEnumerable<Status> GetAllStatuses()
         {
             return _userService.GetAllStatuses();
@@ -57,6 +78,12 @@ namespace MyBlockForumServer.Controllers
         public IEnumerable<Role> GetAllRoles()
         {
             return _userService.GetAllRoles();
+        }
+
+        [HttpGet("UsersFromThread/{id}")]
+        public IEnumerable<User?> GetUsersFromThread(int id)
+        {
+            return _userService.GetUsersFromThread(id);
         }
 
         [HttpGet("UserRole/{id}")]
@@ -74,7 +101,7 @@ namespace MyBlockForumServer.Controllers
         {
             if (!RequestValidator.IdValidate(id))
             {
-                return BadRequest();
+                return BadRequest("GovnoId");
             }
             return Ok(_userService.GetUserThreads(id));
         }
@@ -94,9 +121,16 @@ namespace MyBlockForumServer.Controllers
         {
             if (!RequestValidator.IdValidate(userId) || !RequestValidator.IdValidate(threadId))
             {
-                return BadRequest();
+                return BadRequest("null id");
             }
-            _userService.AddThreadUser(userId, threadId);
+            if (_userService.GetUserThreads(userId).FirstOrDefault(l => l?.Id == threadId) == null)
+            {
+                _userService.AddThreadUser(userId, threadId);
+            }
+            else
+            {
+                return BadRequest("User already is joined to thread");
+            }
             return Ok();
         }
 
@@ -104,12 +138,19 @@ namespace MyBlockForumServer.Controllers
         [AllowAnonymous]
         public ActionResult<User> CreateUser(User user)
         {
-            if (!RequestValidator.ObjectValidate(user))
+            try
+            {
+                if (!RequestValidator.ObjectValidate(user) || _userService.GetUsers().FirstOrDefault(l => l.Login == user.Login) != null)
+                {
+                    return BadRequest();
+                }
+                _userService.CreateUser(user);
+                return Ok(user);
+            }
+            catch
             {
                 return BadRequest();
             }
-            _userService.CreateUser(user);
-            return Ok(user);
         }
 
         [HttpPut]
@@ -123,7 +164,28 @@ namespace MyBlockForumServer.Controllers
             return Ok(user);
         }
 
-        [HttpDelete]
+        [HttpPut("UpdateStatus/{userId}/{statusId}")]
+        public ActionResult<User> SetStatus(int userId, int statusId)
+        {
+            if (!RequestValidator.IdValidate(userId) || !RequestValidator.IdValidate(statusId))
+            {
+                return BadRequest("Id is not validated");
+            }
+            User? user = _userService.GetUser(userId);
+            if (user == null)
+            {
+                return NotFound("User is null");
+            }
+            else
+            {
+                user.StatusId = statusId;
+                _userService.SetUser(user);
+                return Ok(user);
+            }
+        }
+
+
+        [HttpDelete("{id}")]
         public ActionResult DeleteUser(int id)
         {
             if (!RequestValidator.IdValidate(id))
@@ -131,7 +193,31 @@ namespace MyBlockForumServer.Controllers
                 return BadRequest();
             }
             _userService.DeleteUser(id);
+            HttpContext.Response.Cookies.Delete("snezhok_cookie");
+            HttpContext.Response.Cookies.Delete("user_cookie");
             return Ok();
+        }
+
+        [HttpPost("AddKarma/{fromUserId}/{toUserid}")]
+        public ActionResult<bool> AddKarma(int fromUserId, int toUserid)
+        {
+            if (!RequestValidator.IdValidate(fromUserId) || !RequestValidator.IdValidate(toUserid))
+            {
+                return BadRequest();
+            }
+            bool result = _userService.AddKarma(fromUserId, toUserid);
+            return Ok(result);
+        }
+
+        [HttpDelete("RemoveVoteKarma/{fromUserId}/{toUserid}")]
+        public ActionResult<bool> RemoveVoteKarma(int fromUserId, int toUserid)
+        {
+            if (!RequestValidator.IdValidate(fromUserId) || !RequestValidator.IdValidate(toUserid))
+            {
+                return BadRequest();
+            }
+            bool result = _userService.RemoveVoteKarma(fromUserId, toUserid);
+            return Ok(result);
         }
     }
 }

@@ -28,6 +28,16 @@ namespace MyBlockForumServer.DataBase.Services
             return _userRepository.Get(id);
         }
 
+        public User? GetUserByLogin(string login)
+        {
+            return _userRepository.GetList().FirstOrDefault(l => l.Login == login);
+        }
+
+        public IEnumerable<User> GetUsers()
+        {
+            return _userRepository.GetList();
+        }
+
         public string Login(string login, string password)
         {
             User? user = _userRepository.GetList().FirstOrDefault(l => l.Login == login);
@@ -47,11 +57,12 @@ namespace MyBlockForumServer.DataBase.Services
             return token;
         }
 
-        public void CreateUser(User user)
+        public User CreateUser(User user)
         {
             user.Password = Hash.GetHash(user.Login ?? "", user.Password ?? "");
             _userRepository.Create(user);
             _userRepository.Save();
+            return user;
         }
 
         public void SetUser(User user)
@@ -93,9 +104,50 @@ namespace MyBlockForumServer.DataBase.Services
             _userThreadRepository.Save();
         }
 
-        public IEnumerable<Thread> GetUserThreads(int id)
+        public IEnumerable<Thread?> GetUserThreads(int id)
         {
             return _userThreadRepository.GetList().Where(l => l.UserId == id).Select(l => l.Thread);
+        }
+
+        public bool AddKarma(int fromUserId, int toUserId)
+        {
+            User? userFrom = _userRepository.Get(fromUserId);
+            User? userTo = _userRepository.Get(toUserId);
+            if (userFrom != null && userTo != null)
+            {
+                if (userTo.FromUsers.Contains(userFrom)) { return false; }
+                userTo.Karma += 1;
+                userTo.FromUsers.Add(userFrom);
+                _userRepository.Save();
+                return true;
+            }
+            else
+            {
+                throw new Exception("One of users is not defined");
+            }
+        }
+
+        public bool RemoveVoteKarma(int fromUserId, int toUserId)
+        {
+            User? userFrom = _userRepository.Get(fromUserId);
+            User? userTo = _userRepository.Get(toUserId);
+            if (userFrom != null && userTo != null)
+            {
+                if (!userTo.FromUsers.Contains(userFrom)) { return false; }
+                userTo.Karma -= 1;
+                userTo.FromUsers.Remove(userFrom);
+                _userRepository.Save();
+                return true;
+            }
+            else
+            {
+                throw new Exception("One of users is not defined");
+            }
+        }
+
+        public IEnumerable<User?> GetUsersFromThread(int threadId)
+        {
+            return _userThreadRepository.GetList().Where(l => l.ThreadId == threadId).Select(l => l.User);
         }
     }
 }

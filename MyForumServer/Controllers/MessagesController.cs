@@ -60,7 +60,7 @@ namespace MyBlockForumServer.Controllers
             return Ok(message);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
             if (!RequestValidator.IdValidate(id))

@@ -54,7 +54,7 @@
   {
     "ContainingType": "MyBlockForumServer.Controllers.MessagesController",
     "Method": "Delete",
-    "RelativePath": "Messages",
+    "RelativePath": "Messages/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -62,7 +62,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -173,22 +173,6 @@
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.ThreadsController",
-    "Method": "Delete",
-    "RelativePath": "Threads",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyBlockForumServer.Controllers.ThreadsController",
     "Method": "GetThread",
     "RelativePath": "Threads/{id}",
     "HttpMethod": "GET",
@@ -213,6 +197,22 @@
       }
     ],
     "EndpointName": "GetThreadById"
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.ThreadsController",
+    "Method": "Delete",
+    "RelativePath": "Threads/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.ThreadsController",
@@ -310,6 +310,26 @@
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "GetUsers",
+    "RelativePath": "Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyBlockForumServer.DataBase.Entities.User, MyBlockForumServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
     "Method": "CreateUser",
     "RelativePath": "Users",
     "HttpMethod": "POST",
@@ -362,8 +382,34 @@
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "GetUser",
+    "RelativePath": "Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBlockForumServer.DataBase.Entities.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
     "Method": "DeleteUser",
-    "RelativePath": "Users",
+    "RelativePath": "Users/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -371,10 +417,41 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "AddKarma",
+    "RelativePath": "Users/AddKarma/{fromUserId}/{toUserid}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromUserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "toUserid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.UsersController",
@@ -418,6 +495,120 @@
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "GetByLogin",
+    "RelativePath": "Users/GetIdByLogin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Login",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "Users/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDetails",
+        "Type": "MyBlockForumServer.Auth.LoginRequestDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "RemoveVoteKarma",
+    "RelativePath": "Users/RemoveVoteKarma/{fromUserId}/{toUserid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromUserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "toUserid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
+    "Method": "SetStatus",
+    "RelativePath": "Users/UpdateStatus/{userId}/{statusId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MyBlockForumServer.DataBase.Entities.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
     "Method": "GetUserRole",
     "RelativePath": "Users/UserRole/{id}",
     "HttpMethod": "GET",
@@ -444,8 +635,8 @@
   },
   {
     "ContainingType": "MyBlockForumServer.Controllers.UsersController",
-    "Method": "GetUser",
-    "RelativePath": "Users/Users/{id}",
+    "Method": "GetUsersFromThread",
+    "RelativePath": "Users/UsersFromThread/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -458,33 +649,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MyBlockForumServer.DataBase.Entities.User",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "MyBlockForumServer.Controllers.UsersController",
-    "Method": "Login",
-    "RelativePath": "Users/Users/Login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginRequestDetails",
-        "Type": "MyBlockForumServer.Tools.LoginRequestDetails",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MyBlockForumServer.DataBase.Entities.User, MyBlockForumServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

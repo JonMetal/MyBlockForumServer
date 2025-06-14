@@ -15,10 +15,11 @@ namespace MyBlockForumServer.DataBase.Services
             _threadThemeRepository = threadThemeRepository;
         }
 
-        public void CreateThread(Thread thread)
+        public Thread CreateThread(Thread thread)
         {
             _threadRepository.Create(thread);
             _threadRepository.Save();
+            return thread;
         }
 
         public void DeleteThread(int threadId)

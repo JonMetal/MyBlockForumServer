@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OixATQHuUIc=",
+  "dgSpecHash": "px5yAdLeqSE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\anton\\source\\repos\\MyForumServer\\MyForumServer\\MyBlockForumServer.csproj",
+  "projectFilePath": "C:\\Onyx\\MyBlockForum\\MyBlockForumServer\\MyForumServer\\MyBlockForumServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anton\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

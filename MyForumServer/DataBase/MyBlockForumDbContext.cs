@@ -160,6 +160,44 @@ public partial class MyBlockForumDbContext : DbContext
                 .HasForeignKey(d => d.StatusId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__user__status_id__3C34F16F");
+
+            entity.HasMany(d => d.FromUsers).WithMany(p => p.ToUsers)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UserUserKarma",
+                    r => r.HasOne<User>().WithMany()
+                        .HasForeignKey("FromUserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__user_user__from___4F47C5E3"),
+                    l => l.HasOne<User>().WithMany()
+                        .HasForeignKey("ToUserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__user_user__to_us__503BEA1C"),
+                    j =>
+                    {
+                        j.HasKey("FromUserId", "ToUserId").HasName("PK__user_use__C5B0E86FA40B1AF5");
+                        j.ToTable("user_user_karma");
+                        j.IndexerProperty<int>("FromUserId").HasColumnName("from_user_id");
+                        j.IndexerProperty<int>("ToUserId").HasColumnName("to_user_id");
+                    });
+
+            entity.HasMany(d => d.ToUsers).WithMany(p => p.FromUsers)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UserUserKarma",
+                    r => r.HasOne<User>().WithMany()
+                        .HasForeignKey("ToUserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__user_user__to_us__503BEA1C"),
+                    l => l.HasOne<User>().WithMany()
+                        .HasForeignKey("FromUserId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__user_user__from___4F47C5E3"),
+                    j =>
+                    {
+                        j.HasKey("FromUserId", "ToUserId").HasName("PK__user_use__C5B0E86FA40B1AF5");
+                        j.ToTable("user_user_karma");
+                        j.IndexerProperty<int>("FromUserId").HasColumnName("from_user_id");
+                        j.IndexerProperty<int>("ToUserId").HasColumnName("to_user_id");
+                    });
         });
 
         modelBuilder.Entity<UserThread>(entity =>

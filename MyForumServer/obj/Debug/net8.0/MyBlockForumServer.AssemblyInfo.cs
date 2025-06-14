@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyBlockForumServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a15370f98152f7937dcacca04560c457b9d1cd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyBlockForumServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyBlockForumServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
